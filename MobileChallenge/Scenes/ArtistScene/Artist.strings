@@ -1,0 +1,10 @@
+/* 
+  Artist.strings
+  MobileChallenge
+
+  Created by Erwan Hesry on 12/03/2021.
+  
+*/
+
+"ratingValue" = "Rated %.1f/5";
+"ratingCount" = "%d vote(s)";

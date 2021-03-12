@@ -14,3 +14,18 @@ fragment ArtistBasicFragment on Artist {
   disambiguation
 }
 
+query Artist($artistIdentifier: ID!) {
+  node(id: $artistIdentifier) {
+    ...ArtistDetailsFragment
+  }
+}
+
+fragment ArtistDetailsFragment on Artist {
+  id
+  name
+  disambiguation
+  rating {
+    value
+    voteCount
+  }
+}
